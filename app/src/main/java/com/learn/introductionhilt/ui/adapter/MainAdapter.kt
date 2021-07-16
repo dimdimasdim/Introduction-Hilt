@@ -19,9 +19,9 @@ class MainAdapter(
 ) : RecyclerView.Adapter<MainAdapter.DataViewHolder>() {
 
     class DataViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val textViewUserName: TextView = itemView.findViewById(R.id.textViewUserName)
-        val textViewUserEmail: TextView = itemView.findViewById(R.id.textViewUserEmail)
-        val imageViewAvatar: AppCompatImageView = itemView.findViewById(R.id.imageViewAvatar)
+        private val textViewUserName: TextView = itemView.findViewById(R.id.textViewUserName)
+        private val textViewUserEmail: TextView = itemView.findViewById(R.id.textViewUserEmail)
+        private val imageViewAvatar: AppCompatImageView = itemView.findViewById(R.id.imageViewAvatar)
 
         fun bind(user: User) {
             textViewUserName.text = user.name
